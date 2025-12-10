@@ -1,0 +1,8 @@
+version account-id interface-id srcaddr        dstaddr        srcport dstport protocol packets bytes  start         end           action log-status
+2       901523491231 eni-0cf38c6ecccbcc383 98.87.174.97   10.10.0.20    443     50258   6        6       378    1765393848 1765393872 ACCEPT OK
+2       901523491231 eni-0cf38c6ecccbcc383 10.10.0.20     98.87.174.97  50258   443     6        8       490    1765393848 1765393872 ACCEPT OK
+
+
+flowlogs/sample-reject.log
+version account-id interface-id srcaddr        dstaddr        srcport dstport protocol packets bytes start        end          action log-status
+2       901523491231 eni-0cf38c6ecccbcc383 98.87.174.97   10.10.0.20    443     50258   6        1       60    1765393999 1765394005 REJECT OK
